@@ -9,7 +9,20 @@
     max-width: 960px;
     margin: 0 auto;
     width: 100%;
+    display: grid;
+    text-align: center;
+    background-color: #ffffff00;
 }
+
+.input {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 
 :root {
     --corPrincipal: #c08226;

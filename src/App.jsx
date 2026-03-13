@@ -5,11 +5,14 @@ import Formulario from "./components/Formulario";
 import ReposList from "./components/ReposList";
 
 function App() {
-  const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true);
+  // const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true);
   const [nomeUsuario, setNomeUsuario] = useState('')
   return (
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+    <div className="container">
+      <h2>Insira o nome de usuário na caixa abaixo:</h2>
+      <input className="input" type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+    </div>
 
       {nomeUsuario.length > 4 && (
         <>
